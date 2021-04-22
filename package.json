@@ -1,0 +1,34 @@
+{
+  "name": "roomba",
+  "version": "1.0.0",
+  "description": "Project 2 for platzi master. Game",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ithzavg/roomba-game.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Ithzamary Vilchis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ithzavg/roomba-game/issues"
+  },
+  "homepage": "https://github.com/ithzavg/roomba-game#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^8.1.1"
+  }
+}
