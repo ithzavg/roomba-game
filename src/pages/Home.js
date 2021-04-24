@@ -6,15 +6,19 @@ const Home = () => {
         </header>
 
         <section class="game-scenes">
-            <figure id="section__first-scene">
-                <img class="img-scene" src="/src/img/scene1.PNG"></img>
-                <figcaption> Scene 1</figcaption>
-            </figure>
+            <a href="#/sceneone">
+                <figure id="section__first-scene">
+                    <img class="img-scene" src="/src/img/scene1.PNG"></img>
+                    <figcaption> Scene 1</figcaption>
+                </figure>
+            </a>
 
-            <figure id="section__second-scene">
-                <img class="img-scene" src="/src/img/scene2.PNG"></img>
-                <figcaption> Scene 2</figcaption>
-            </figure>
+            <a href="#/scenetwo">
+                <figure id="section__second-scene">
+                    <img class="img-scene" src="/src/img/scene2.PNG"></img>
+                    <figcaption> Scene 2</figcaption>
+                </figure>
+            </a>
         </section>
     `;
 
