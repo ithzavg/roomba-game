@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(255, 127, 126, 0.58);
+    height: 100%;
+}
+
+#main-game{
+    min-width: 100%;
+}
+
+.game-header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.game-title{
+    position:absolute;
+    font-family: Fredoka One;
+    color: #FCFCFC;
+    font-size: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.game-subtitle{
+    position:absolute;
+    top: 100px;
+    font-family: Fredoka One;
+    font-size:30px;
+    color: #E3584B;
+}
+
+.game-scenes{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.game-scenes figure{
+    border: 4px solid #fff;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin-left: 50px; 
+}
+
+
+
+.btn{
+    background: #E3584B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:right;
+    margin-right: 50px;
+    
+}
+
+#btn-control-music{
+    width: 56px;
+}
+
+#btn-instructions-game{
+    width: 80px;
+    font-family: Fredoka One;
+    color:#ffffff;
+}
+
+#btn-control-music img{
+    width: 40px;
+    height: 43px;
+}
+
+#btn-control-music:focus{
+    outline:none;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+}
+
+#section-control__footer{
+    display: inherit;
+    align-items: center;
+}
+
+.img-scene{
+    width: 372px;
+    margin-left: 13px;
+}
+
+figcaption{
+    color: #E3584B;
+    font-family: Fredoka One;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

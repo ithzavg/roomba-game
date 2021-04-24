@@ -1,27 +1,45 @@
-window.addEventListener('load', mira);
+import Robot from './templates/Robot';
+import Home from './pages/Home';
+import Instructions from './templates/Instructions';
 
-const Robot = () => {
-    console.log("carga 2")
-    const  template = `<button id="button" onclick="mira()">Hola</button>`
-    return template;
+Robot();
+
+const home = document.getElementById('main-game');
+home.innerHTML = Home();
+
+
+const btnControl = document.getElementById('btn-control-music');
+const audio = document.getElementById('game-music');
+const imgAudio = document.getElementById('img-audio-game')
+
+const controlMusic = () =>{
+    if(audio.paused){
+        audio.play();
+        imgAudio.src= "../src/img/play.svg"
+    }else{
+        audio.pause();
+        imgAudio.src= "../src/img/mute.svg"
+    }
 }
 
-const agrega = null || document.getElementById('testing');
-agrega.innerHTML = Robot();
+btnControl.addEventListener("click", controlMusic);
 
-function mira(){
-    console.log('evento detectado 1');
+const btnInstructions = document.getElementById('btn-instructions-game');
+const modal = document.getElementById('modal');
+
+
+const showModal = () =>{
+    modal.innerHTML = Instructions();
+    modal.style.display = 'block';
+    const btnCloseModal = document.getElementById('btn-close-modal');
+    btnCloseModal.addEventListener('click', function(){
+        modal.style.display = 'none';
+    });
 }
 
+btnInstructions.addEventListener('click', showModal);
 
 
-/*const mira = () => {
-    console.log('evento detectado 1');
-}*/
-
-
-//const boton = document.getElementById('button');
-//boton.addEventListener("click", mira);
 
 
 

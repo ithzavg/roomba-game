@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="/src/styles/styles.css" rel="stylesheet"></head>
+    <link type="text/css" href="/src/styles/modal.css" rel="stylesheet"></link>
     <title>Roomba-game</title>
 </head>
 <body>
 
-    <main>
-        <section id="testing"></section>
+    <main id="main-game">
+        
     </main>
-    <canvas id="roomba"></canvas>
+    <audio autoplay id="game-music">
+        <source src="../src/audio/Robot Boogie - Quincas Moreira.mp3">
+    </audio>
+    
+
+    <footer id="footer">
+        <canvas id="roomba"></canvas>
+        <section id="section-control__footer">
+            <button class="btn" id="btn-instructions-game">instructions</button>
+            <button class="btn" id="btn-control-music">
+                <img id="img-audio-game" src="../src/img/play.svg"></img>
+            </button>
+        </section>
+    </footer>
+
+    <div id="modal"></div>
+    
 </body>
 </html>

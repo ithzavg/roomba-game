@@ -1,1 +1,1 @@
-console.log("hello its working");
+window.addEventListener("load",void console.log("evento detectado 1")),document.getElementById("testing").innerHTML="<button id='button' onclick='mira()'>Hola</button>";
