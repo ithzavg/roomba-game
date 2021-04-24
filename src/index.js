@@ -1,11 +1,10 @@
 import Robot from './templates/Robot';
-import Home from './pages/Home';
 import Instructions from './templates/Instructions';
+import router from './routes/routes';
 
-Robot();
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
 
-const home = document.getElementById('main-game');
-home.innerHTML = Home();
 
 
 const btnControl = document.getElementById('btn-control-music');
