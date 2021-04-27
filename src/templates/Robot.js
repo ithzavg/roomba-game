@@ -1,87 +1,98 @@
-const Robot =() =>{
-   var canvas =  document.getElementById('roomba');
+const Robot = (canvas, obj) =>{
+  const trashImg = new Image();
+  const cleanImg = new Image();
+
+  trashImg.src = ('/src/img/trash.svg');
+  cleanImg.src = ('/src/img/clean.svg');
+
    if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0, 1355, 150);
 
-  //ctx.translate(150, 20);
+    ctx.drawImage(trashImg, 150, 50, 50,50);
+    ctx.drawImage(trashImg, 300, 50, 50, 50);
+    ctx.drawImage(trashImg, 450, 50, 50,50);
+    ctx.drawImage(trashImg, 600, 50, 50,50);
+    ctx.drawImage(trashImg, 750, 50, 50,50);
 
     ctx.beginPath();
     ctx.fillStyle='#4398D1';
-    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx.arc(obj.x, obj.y, 50, 0, 2 * Math.PI, true);
     ctx.fill();
     ctx.closePath();
 
     ctx.beginPath();
     ctx.strokeStyle = '#126099';
-    ctx.arc(100, 75, 40, 0, 2 * Math.PI);
+    ctx.arc(obj.x, obj.y, 40, 0, 2 * Math.PI);
     ctx.lineWidth = 4;
     ctx.stroke();
     ctx.closePath();
 
+   
     ctx.beginPath();
     ctx.fillStyle = '#87CED9';
-    ctx.fillRect(88,38,25,38);
+    ctx.fillRect(obj.xElement,obj.yElement,25,38);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle='#E3584B';
-    ctx.arc(101, 54, 3, 0, 2 * Math.PI);
+    ctx.arc(obj.xA, obj.yA, 3, 0, 2 * Math.PI);
     ctx.fill();
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#FDB62F';
-    ctx.fillRect(88,51,7,5);
+    ctx.fillRect(obj.xElement,obj.yB,7,5);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#FDB62F';
-    ctx.fillRect(106,51,7,5);
+    ctx.fillRect(obj.xC,obj.yC,7,5);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#69B6C2';
-    ctx.fillRect(88,41,25,3);
+    ctx.fillRect(obj.xElement,obj.yD,25,3);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#69B6C2';
-    ctx.fillRect(88,65,25,3);
+    ctx.fillRect(obj.xElement,obj.yE,25,3);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#69B6C2';
-    ctx.fillRect(88,70,25,3);
+    ctx.fillRect(obj.xElement,obj.yF,25,3);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#126099';
-    ctx.fillRect(88,105,25,15);
+    ctx.fillRect(obj.xElement,obj.yG,25,15);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#69B6C2';
-    ctx.fillRect(88,111,25,3);
+    ctx.fillRect(obj.xElement,obj.yH,25,3);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#126099';
-    ctx.fillRect(51,78,8,3);
+    ctx.fillRect(obj.xI,obj.yI,8,3);
     ctx.closePath();
 
     ctx.beginPath();
     ctx.fillStyle = '#126099';
-    ctx.fillRect(141,78,8,3);
+    ctx.fillRect(obj.xJ,obj.yJ,8,3);
     ctx.closePath();
 
     ctx.beginPath();
-    
     ctx.fillStyle = '#fff';
     ctx.font = "11px Fredoka One";
     ctx.lineWidth = 3;
-    ctx.fillText("roomba", 81, 93);
+    ctx.fillText("roomba", obj.xK, obj.yK);
     ctx.closePath();
 
+    
     
   }
 }

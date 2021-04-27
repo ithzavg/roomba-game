@@ -2,9 +2,6 @@ import Robot from './templates/Robot';
 import Instructions from './templates/Instructions';
 import router from './routes/routes';
 
-window.addEventListener('load', router);
-window.addEventListener('hashchange', router);
-
 
 
 const btnControl = document.getElementById('btn-control-music');
@@ -37,6 +34,15 @@ const showModal = () =>{
 }
 
 btnInstructions.addEventListener('click', showModal);
+
+
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
+
+
+
+
+
 
 
 
