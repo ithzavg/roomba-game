@@ -68,7 +68,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/ithzavg/roomba-game.git
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd roomba-game
 
 # Install dependencies
 $ npm install
