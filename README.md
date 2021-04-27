@@ -1,16 +1,17 @@
 <h1 align="center">
 <img src="https://i.ibb.co/jRvtNLC/logo.jpg" width="150px">
-roomba game
 </h1>
+<h1 align="center">roomba game</h1>
+
 
 This is a desktop application that simulates the function of a vacuum, this game has two scenarios that shows vertical and horizontal movements.
 Click in the link below to go and play!.
-## :tw-1f36c: Language and tools
+## :candy: Language and tools
 <p align="center">
-[<img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>](<LINK>) [<img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>](<LINK>) [<img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>](<LINK>) <img alt="Webpack" src="https://img.shields.io/badge/webpack-%238DD6F9.svg?&style=for-the-badge&logo=webpack&logoColor=black" /> <img alt="Babel" src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" />
+<img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="Webpack" src="https://img.shields.io/badge/webpack-%238DD6F9.svg?&style=for-the-badge&logo=webpack&logoColor=black" /> <img alt="Babel" src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" />
 </p>
 
-## :tw-1f36c: Analysis
+## 🍬 Analysis
 
 Check the flow diagrams in the images below:
 
@@ -37,7 +38,7 @@ Check the flow diagrams in the images below:
 - roomba robot
 - Audio pause and play
 
-## :tw-1f36c: Design and inspiration
+## 🍬 Design and inspiration
 I took the design inspiration for the movie Wreck it Ralph from Disney
 You can check out the figma design in the link below:
 
@@ -49,7 +50,7 @@ You can check out the figma design in the link below:
 
 [![scene2](https://i.ibb.co/N9N61fK/scene2.png "scene2")](https://i.ibb.co/N9N61fK/scene2.png "scene2")
 
-## :tw-1f36c: Key Features
+## 🍬 Key Features
 - Audio 
 - Instructions
 - Scene One
@@ -59,12 +60,12 @@ You can check out the figma design in the link below:
  - The vaccum moves vertically
  - Use of keyboard arrows  up and down
 
-## :tw-1f36c: How to use
+## 🍬 How to use
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/ithzavg/roomba-game.git
 
 # Go into the repository
 $ cd electron-markdownify
@@ -75,9 +76,14 @@ $ npm install
 # Run the app
 $ npm start
 ```
-## :tw-1f36c: Credits
+## 🍬 Credits
 **Ithzamary Vilchis García - Frontend developer**
 
-## :tw-1f36c: License
+🎵 https://studio.youtube.com/
+
+
+🎵 Robot Boogie - Quincas Moreira  
+
+## 🍬 License
 MIT
  
