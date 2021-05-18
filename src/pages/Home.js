@@ -12,13 +12,6 @@ const Home = () => {
                     <figcaption> Scene 1</figcaption>
                 </figure>
             </a>
-
-            <a href="#/scenetwo">
-                <figure id="section__second-scene">
-                    <img class="img-scene" src="/src/img/scene2.PNG"></img>
-                    <figcaption> Scene 2</figcaption>
-                </figure>
-            </a>
         </section>
     `;
 

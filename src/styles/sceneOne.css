@@ -44,7 +44,7 @@
     left: -73px;
 }
 
-#btn-exit-game{
+.btn-exit-game{
     width: 50px;
     color:#fff;
     font-family: Fredoka One;
@@ -52,3 +52,48 @@
     text-decoration: none;
 }
 
+.btn-reload-game{
+    color: white;
+    font-family: 'Fredoka One';
+    width: 55px;
+    font-size: 15px;
+}
+
+.img-trash{
+    width: 47px;
+    position: relative;
+    top: -58px;
+}
+
+.one{
+    left: 206px;
+}
+
+.two{
+    left: 300px;
+}
+
+.three{
+    left: 394px;
+}
+
+.four{
+    left: 488px;
+}
+
+.five {
+    left: 584px;
+}
+
+.path-bottom{
+    width: 100%;
+    position: relative;
+    border: 1px solid #E3584B;
+    top: 9px;
+}
+.path-top{
+    width: 100%;
+    position: relative;
+    border: 1px solid #E3584B;
+    top: -100px
+}

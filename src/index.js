@@ -1,4 +1,3 @@
-import Robot from './templates/Robot';
 import Instructions from './templates/Instructions';
 import router from './routes/routes';
 
