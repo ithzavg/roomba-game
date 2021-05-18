@@ -1,21 +1,18 @@
 import SceneOne from '../pages/SceneOne';
-import SceneTwo from '../pages/SceneTwo';
 import Home from '../pages/Home';
-import Robot from '../templates/Robot';
 import getHash from './getHash';
 import resolveRoutes from './resolveRoutes';
-import objPosition from '../utils/ObjectPosition';
+import MoveRightLeft from '../utils/MoveRightLeft';
+import Start from "../templates/Start";
 
 const routes = {
     '/' : Home,
-    '/sceneone' : SceneOne,
-    '/scenetwo' : SceneTwo
+    '/sceneone' : SceneOne
 }
 
 
 const router = async() =>{
-    const content = null || document.getElementById('main-game');
-    const footer = null || document.getElementById('footer');
+    const content = null || document.getElementById('main-game'); 
 
     let hash = getHash();
 
@@ -25,41 +22,21 @@ const router = async() =>{
 
     content.innerHTML = await render();
 
+    const showStart = () =>{
+        modal.innerHTML = Start();
+        modal.style.display = 'block';
+        const btnCloseModal = document.getElementById('btn-close-modal');
+        btnCloseModal.addEventListener('click', function(){
+            modal.style.display = 'none';
+        });
+    }
+
 
     if(route === "/sceneone"){
-        const loadRobot = document.getElementById('roomba');
-        loadRobot.height = window.innerHeight - 507;
-        loadRobot.width = window.innerWidth - 20;
-
-        document.onkeydown = function(e) {
-            switch (e.keyCode) {
-                case 37:  
-                    loadRobot.innerHTML = Robot(loadRobot,objPosition);
-                   
-                    objPosition.x--;
-                    objPosition.xElement--;
-                    objPosition.xA--;
-                    objPosition.xC--;
-                    objPosition.xI--;
-                    objPosition.xJ--;
-                    objPosition.xK--;
-
-                    break;
-                case 39:
-                    loadRobot.innerHTML = Robot(loadRobot, objPosition);
-                    
-                    objPosition.x++;
-                    objPosition.xElement++;
-                    objPosition.xA++;
-                    objPosition.xC++;
-                    objPosition.xI++;
-                    objPosition.xJ++;
-                    objPosition.xK++;
-
-                    break;
-            }
-        }
+        showStart();
+        MoveRightLeft();
     }
+
 }
 
 export default router;
