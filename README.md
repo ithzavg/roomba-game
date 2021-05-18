@@ -46,13 +46,13 @@ Check the flow diagrams in the images below:
 I took the design inspiration for the movie Wreck it Ralph from Disney
 You can check out the figma design in the link below:
 
-[Figma Design](https://www.figma.com/file/pgzVs26PosTrKRG8cW4IBW/Roomba?node-id=1%3A2 "Figma Design")
+▶️ [Figma Design](https://www.figma.com/file/pgzVs26PosTrKRG8cW4IBW/Roomba?node-id=1%3A2 "Figma Design") ◀️
 
-[![home](https://i.ibb.co/6vjpkhP/home.png "home")](https://i.ibb.co/6vjpkhP/home.png "home")
+[![home](https://i.ibb.co/ts7Xt99/home-flow.png "home")](https://i.ibb.co/ts7Xt99/home-flow.png "home")
 
 [![scene1](https://i.ibb.co/f45ZwBL/scene1.png "scene1")](https://i.ibb.co/f45ZwBL/scene1.png "scene1")
 
-[![scene2](https://i.ibb.co/N9N61fK/scene2.png "scene2")](https://i.ibb.co/N9N61fK/scene2.png "scene2")
+
 
 ## 🍬 Key Features
 - Audio 
@@ -60,9 +60,14 @@ You can check out the figma design in the link below:
 - Scene One
  - The vaccum moves horizontally
  - Use of keyboard arrows right and left
+
+
+## 🍬 Next Steps
 - Scene two
  - The vaccum moves vertically
  - Use of keyboard arrows  up and down
+
+[![scene2](https://i.ibb.co/N9N61fK/scene2.png "scene2")](https://i.ibb.co/N9N61fK/scene2.png "scene2")
 
 ## 🍬 How to use
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
